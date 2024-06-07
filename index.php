@@ -9,5 +9,16 @@
   <?php 
     echo "Hello World"
   ?>
+  <!-- <?php 
+   phpinfo();
+  ?> -->
+  <?php 
+  function get_var($varname){
+    global $$varname;
+    var_dump($$varname);
+  }
+
+   get_var('_POST');
+  ?>
 </body>
 </html>
